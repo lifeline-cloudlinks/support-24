@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電話番号登録</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        a {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>電話番号の登録</h1>
+        <p>以下のリンクをタップすると、電話番号が電話帳に登録されます:</p>
+        <a href="#" onclick="downloadVCF()">電話帳に0120540987を登録</a>
+    </div>
+
+    <script>
+        function downloadVCF() {
+            // VCFファイルへの正しいパスを指定
+            window.location.href = 'https://lifeline-cloudlinks.github.io/lifeline-cloudlinks/support-24/contact.vcf';
+        }
+    </script>
+</body>
+</html>
